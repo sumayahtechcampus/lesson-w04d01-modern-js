@@ -21,7 +21,7 @@
 
 ### Strict mode
 
-It’s time to take the training wheels off JavaScript and start using its strict mode to eliminate some of JavaScript’s silent errors by changing them to throw errors. And, as a nice side effect, we end up helping JavaScript engines to perform optimizations on our code to run it faster.
+It's time to take the training wheels off JavaScript and start using its strict mode to eliminate some of JavaScripts silent errors by changing them to throw errors. And, as a nice side effect, we end up helping JavaScript engines to perform optimizations on our code to run it faster.
 
 ```js
 'use strict';
@@ -60,7 +60,7 @@ Read the resources below and experiment with what you know of JavaScript in the 
 
 ### Arrow functions
 
-ES6 introduces a new syntax for writing anonymous functions in JavaScript. It has a much more concise syntax and should be easier to pick up after using function expressions. Arrow functions gets its name from its syntax `=>`, which in other languages, is knows as: the fat arrow, the rocket or the Lamda operator.
+ES6 introduces a new syntax for writing anonymous functions in JavaScript. It has a much more concise syntax and should be easier to pick up after using function expressions. Arrow functions gets its name from its syntax `=>`, which in other languages, is knows as: the fat arrow, the rocket or the Lambda operator.
 
 **Example 1:**
 
@@ -125,9 +125,9 @@ function divide(num1, num2) {
   return num1 / num2;
 }
 
-function whoIsTheBestIA() {
-  let iaName = 'Alanoud';
-  console.log(iaName);
+function whoIsTheBestStudent() {
+  const studentName = 'Noura';
+  console.log(studentName);
 }
 ```
 
@@ -188,7 +188,7 @@ Lastly, the `forEach` method always returns the value `undefined`.
 #### Example 1: Using forEach
 
 ```js
-const instructors = ['Usman', 'Marc', 'Alanoud'];
+const instructors = ['Usman', 'Reem', 'Hazim', 'Mansour'];
 
 // Print each instructor
 instructors.forEach(function(element) {
@@ -205,7 +205,7 @@ instructors.forEach(function(element, index) {
 #### Example 2: Converting a for-loop to forEach
 
 ```js
-const instructors = ['Usman', 'Marc', 'Alanoud'];
+const instructors = ['Usman', 'Reem', 'Hazim', 'Mansour'];
 const instructorsCopy = [];
 
 // For Loop
@@ -223,14 +223,14 @@ instructors.forEach(function(item){
 
 1. Say Hi
     ```js
-    const friends = ["Mansour", "Munira", "Ahmed"];
+    const friends = ["Aisha", "Abdulrahman", "Sumayah"];
 
     // For each friend in friends, print "Hi friendName!"
     // Write your solution here
     ```
 2. Crazy Numbers
     ```js
-    // Thats an array with crazy numbers we cant read 😯
+    // That's an array with crazy numbers we cant read 😯
     const nums = [103440, 3799.2663, 3.14159265359, 859494, 59439];
     let total = 0;
 
@@ -277,7 +277,7 @@ The `map()` method creates a new array with the results of calling a provided fu
     Capitalize all the strings in the IA's array and store them in the array capitalizedIA.
 
     ```js
-    const iAS = ['alanoud', 'khalid', 'shaima', 'hakami'];
+    const iAS = ['alanoud', 'reem', 'hazim', 'mansour'];
     let capitalizedIAs = [];
 
     // Write your solution here
@@ -326,7 +326,7 @@ The `filter()` method creates a new array with all elements that pass the test i
     2. Use Arrow function
     3. Use implicit return
     ```js
-    const names = ["Sara", "Abdulrahman", "Eman"];
+    const names = ["Lamees", "Nawal", "Mesfer"];
     // Write your solution here
     console.log(result);
     ```
@@ -392,6 +392,8 @@ There are a lot of features in ES6 that we have not covered:
 - [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
 ### Practice
+
+![](yoda-fail-you-will.jfif)
 
 #### Map
 
