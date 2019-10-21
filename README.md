@@ -133,6 +133,21 @@ function whoIsTheBestStudent() {
 
 Your solution:
 
+const addFive = (num) => {
+
+return 5 + num;
+
+};
+
+const add = (num1 , num2) => {
+
+return num1 + num2 ; 
+
+}
+
+const whoIsTheBestStudent = () => console.log('Noura');
+
+
 ```js
 
 ```
@@ -149,9 +164,15 @@ Your solution:
 
 Your solution:
 
-```js
+1. const fullName = function (first , last ){
 
-```
+console.log ("fullName is " + first + " " + last );
+
+
+}
+fullName("Sumayah" , "Ali");
+
+2. 
 
 ##### Turn `sayHello` into an arrow function
 
@@ -226,7 +247,19 @@ instructors.forEach(function(item){
     const friends = ["Aisha", "Abdulrahman", "Sumayah"];
 
     // For each friend in friends, print "Hi friendName!"
-    // Write your solution here
+    // Write your solution here 
+
+    const friends = ["Aisha", "Abdulrahman", "Sumayah"];
+
+// For each friend in friends, print "Hi friendName!"
+// Write your solution here
+
+friends.forEach(function(element){
+
+console.log("Hi" + " " + element);
+});
+
+
     ```
 2. Crazy Numbers
     ```js
@@ -272,6 +305,12 @@ The `map()` method creates a new array with the results of calling a provided fu
     let times100 = [];
 
     // Write your solution here
+    const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let times100 = [];
+
+ times100 = nums.map((val, i, arr) => {
+  return val * 100;
+});
     ```
 2. Capitalize
     Capitalize all the strings in the IA's array and store them in the array capitalizedIA.
@@ -281,6 +320,10 @@ The `map()` method creates a new array with the results of calling a provided fu
     let capitalizedIAs = [];
 
     // Write your solution here
+    const iAS = ['alanoud', 'reem', 'hazim', 'mansour'];
+  let capitalizedIAs = [];
+  capitalizedIAs = iAS.map(name => name.toUpperCase())
+  console.log(capitalizedIAs)
     ```
 3. Abbreviations
     ```js
@@ -291,6 +334,12 @@ The `map()` method creates a new array with the results of calling a provided fu
     // Find the abbreviation of all days and add them to dayAbbreviations array
     // Write your solution here
     ```
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+   let dayAbbreviations = [];
+
+dayAbbreviations = days.map(day => day.substr(0,3));
+console.log(dayAbbreviations)
 4. century20
     ```js
     const years = [1989, 2015, 2000, 1999, 2013, 1973, 2012];
@@ -299,7 +348,12 @@ The `map()` method creates a new array with the results of calling a provided fu
     // century20 should be: [1989, 2000, 1999, 1973]
     // Write your solution here
     ```
+ const years = [1989, 2015, 2000, 1999, 2013, 1973, 2012];
+    let century20 =  [];
 
+century20 = years.filter(val => {
+  return val <= 2000;
+});
 
 ### Filter: Team Study (30 mins)
 
@@ -316,8 +370,15 @@ The `filter()` method creates a new array with all elements that pass the test i
     ```js
     const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     // Write your solution here
-    console.log(result);
-    ```
+    const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let result = nums.filter(val => {
+  return val % 3 === 0;
+}); 
+console.log(result);
+    ```// solution diffWay
+    const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const result = nums.filter(nums => nums%3==0);
+console.log(result);
 2. Create an array of names (maybe use 3 of your friends)
 
     Requirements:
@@ -327,6 +388,11 @@ The `filter()` method creates a new array with all elements that pass the test i
     3. Use implicit return
     ```js
     const names = ["Lamees", "Nawal", "Mesfer"];
+    const names = ["Lamees", "Nawal", "Mesfer"];
+let withA = [];
+withA = names.filter(name => name.includes('a'))
+console.log(withA);
+
     // Write your solution here
     console.log(result);
     ```
@@ -359,6 +425,12 @@ The `reduce()` method executes a reducer function (that you provide) on each ele
 
     // Write your solution here
 
+    /*const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let sum = nums.reduce((acc, val) => {
+    return acc + val;
+   });
+  console.log(sum);*/
+
     console.log(sum);
     ```
 2. Crazy Numbers
@@ -369,7 +441,12 @@ The `reduce()` method executes a reducer function (that you provide) on each ele
 
     // Sum all the numbers in nums and save the result in total
     // Write your solution here
-    ```
+    const nums = [103440, 3799.2663, 3.14159265359, 859494, 59439];
+    let total = nums.reduce((acc, val) => {
+    return acc + val;
+   });
+   console.log(total);
+    
 3. Crazy number again!!
     ```js
     // These crazy numbers now are strings 😯 😯  !!  
@@ -409,6 +486,7 @@ const products = [
 ];
 
 // Write your solution here
+const discountProducts = products.map(object => object*0,05);
 
 console.log(discountProducts);
 ```
@@ -427,6 +505,9 @@ const products = [
 ];
 
 // Write your solution here
+const discountProducts = products.filter(object => object.price <70);
+
+
 
 console.log(cheapProducts);
 ```
